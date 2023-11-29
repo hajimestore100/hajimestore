@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth; 
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background-color: black;
+}
+
+header nav .logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 7px 0;
+    margin-right: 350px;
+}
+
+header nav ul{
+    list-style: none;
+
+}
+
+header nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+
+header nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: maroon;
+    display: block;
+    transition: 0.2s linear;
+}
+
+header nav ul li a:hover::after{
+    width: 100%;
+}
+
+header nav ul li a:hover{
+    color: maroon;
+}
+
+
+.heading{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.heading h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+
+.heading h1 span{
+    margin-left: 15px;
+    color: maroon;
+    font-family: mv boli;
+}
+
+.awal{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.awal h2{
+    margin-left: 15px;
+    color: black;
+    font-size: 2rem;
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+.ganci{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 20px;
+    align-items: center;
+    grid-gap: 20px;
+    border-radius: 30px;
+    margin-left: 70px;
+    margin-right: 25px;
+}
+
+.box {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    text-align: center;
+    background: rgb(235, 230, 230);
+    width: 300px;
+    height: 440px;
+    transition: transform;
+    box-shadow: 20px  20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.box:hover{
+    transform: scale(1.1);  
+    box-shadow: 20px  20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.box img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    background: whitesmoke;
+}
+
+.box .content {
+    margin-top: 10px; 
+}
+
+.box h3 {
+    margin-bottom: 5px; 
+}
+
+.box p {
+    margin-bottom: 10px; 
+}
+
+.box .btn-box{
+    background: maroon;
+    padding: 10px 16px;
+    margin-top: 50px;
+
+    text-decoration: none;
+    color: whitesmoke;
+    border-radius: 25px;
+}
+
+.box .btn-box:hover{
+    background: rgb(198, 133, 133);
+    color: maroon;
+}
+
+.lanyard{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 20px;
+    align-items: center;
+    grid-gap: 20px;
+    border-radius: 30px;
+    margin-left: 70px;
+    margin-right: 25px;
+}
+
+.box-lanyard {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    text-align: center;
+    background: rgb(235, 230, 230);
+    width: 300px;
+    height: 490px;
+    transition: transform;
+    box-shadow: 20px  20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.box-lanyard:hover{
+    transform: scale(1.1);  
+    box-shadow: 20px  20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.box-lanyard img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    background: whitesmoke;
+}
+
+.box-lanyard .content {
+    margin-top: 10px; 
+}
+
+.box-lanyard h3 {
+    margin-bottom: 5px; 
+}
+
+.box-lanyard p {
+    margin-bottom: 10px; 
+}
+
+.box-lanyard .btn-box{
+    background: maroon;
+    padding: 10px 16px;
+    margin-top: 50px;
+
+    text-decoration: none;
+    color: whitesmoke;
+    border-radius: 25px;
+}
+
+.box-lanyard .btn-box:hover{
+    background: rgb(198, 133, 133);
+    color: maroon;
+}
+
+
+.scrunchie{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 20px;
+    align-items: center;
+    grid-gap: 20px;
+    border-radius: 30px;
+    margin-left: 70px;
+    margin-right: 25px;
+}
+.box-scrunchie {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    text-align: center;
+    background: rgb(235, 230, 230);
+    width: 300px;
+    height: 510px;
+    transition: transform;
+    box-shadow: 20px  20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.box-scrunchie:hover{
+    transform: scale(1.1);  
+    box-shadow: 20px  20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.box-scrunchie img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    background: whitesmoke;
+}
+
+.box-scrunchie .content {
+    margin-top: 10px; 
+}
+
+.box-scrunchie h3 {
+    margin-bottom: 5px; 
+}
+
+.box-scrunchie p {
+    margin-bottom: 10px; 
+}
+
+.box-scrunchie .btn-box{
+    background: maroon;
+    padding: 10px 16px;
+    margin-top: 50px;
+
+    text-decoration: none;
+    color: whitesmoke;
+    border-radius: 25px;
+}
+
+.box-scrunchie .btn-box:hover{
+    background: rgb(198, 133, 133);
+    color: maroon;
+}
+
+.haori{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 20px;
+    align-items: center;
+    grid-gap: 20px;
+    border-radius: 30px;
+    margin-left: 70px;
+    margin-right: 25px;
+}
+.box-haori {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    text-align: center;
+    background: rgb(235, 230, 230);
+    width: 300px;
+    height: 510px;
+    transition: transform;
+    box-shadow: 20px  20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.box-haori:hover{
+    transform: scale(1.1);  
+    box-shadow: 20px  20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.box-haori img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    background: whitesmoke;
+}
+
+.box-haori .content {
+    margin-top: 10px; 
+}
+
+.box-haori h3 {
+    margin-bottom: 5px; 
+}
+
+.box-haori p {
+    margin-bottom: 10px; 
+}
+
+.box-haori .btn-box{
+    background: maroon;
+    padding: 10px 16px;
+    margin-top: 50px;
+
+    text-decoration: none;
+    color: whitesmoke;
+    border-radius: 25px;
+}
+
+.box-haori .btn-box:hover{
+    background: rgb(198, 133, 133);
+    color: maroon;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    header nav .logo img {
+      margin-right: 150px;
+    }
+  
+    .ganci, .lanyard, .scrunchie,.haori {
+      grid-template-columns: repeat(3, 1fr);
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  
+    .box, .box-lanyard, .box-scrunchie, .box-haori {
+      width: 180px;
+      height: auto;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    header nav .logo img {
+      margin-right: 50px;
+    }
+  
+    .ganci, .lanyard, .scrunchie, .haori {
+      grid-template-columns: repeat(2, 1fr);
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  
+    .box, .box-lanyard, .box-haori, .box-scrunchie {
+      width: 100%;
+      height: auto;
+    }
+  }
+  

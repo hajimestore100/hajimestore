@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth; 
+}
+
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: black;
+}
+
+header nav .logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 7px 0;
+    margin-right: 350px;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+
+header nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: maroon;
+    display: block;
+    transition: 0.2s linear;
+}
+
+header nav ul li a:hover::after{
+    width: 100%;
+}
+
+header nav ul li a:hover{
+    color: maroon;
+}
+
+.home{
+    display: grid;
+    flex-wrap: wrap;
+    align-items: center;
+    background: whitesmoke;
+}
+
+.content {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.content-left {
+    width: 70%; 
+    margin-right: 50px;
+}
+
+.content .content-left .home-text{
+    flex-direction: column;
+    margin-left: 180px;
+    color: black;
+}
+
+.content .content-left .home-text h2{
+    font-size: 50px;
+    margin-top: 50px;
+    font-family: sans-serif;
+}
+
+.content .content-left .home-text span{
+    font-size: 50px;
+    font-family: mv boli;
+    color: maroon;
+    line-height: 22px;
+    font-size: 70px;
+}
+
+.content .content-left .home-text p{
+    font-size: 20px;
+    line-height: 2pc;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-family: sans-serif;
+}
+
+.content .button{
+    background: maroon;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: white;
+    border-radius: 40px;
+}
+
+.button:hover{
+    background: rgb(198, 133, 133);
+    color: maroon;
+}
+
+.content-right {
+    width: 30%; 
+    margin-top: 100px;
+}
+
+.content .content-right img{
+    width: 100%;
+    animation: float 3s linear infinite;
+}
+
+/* animasi */
+@keyframes float{
+    0%, 100%{
+        transform: translatey(0rem);
+    }
+    50%{
+        transform: translatey(3rem);
+    }
+}
+
+.about{
+    width: 100%;
+    height: 100vh; 
+    padding: 70px 0;
+    background-color: white;
+}
+
+.about .about-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about .about-content .about-img img{
+    width: 700px;
+    position: relative;
+    top: 50px;
+    animation: float 3s linear infinite;
+}
+
+/* animasi */
+@keyframes float{
+    0%, 100%{
+        transform: translatex(0rem);
+    }
+    50%{
+        transform: translatex(3rem);
+    }
+}
+
+.about .about-content .about-text h2 {
+    font-size: 65px;
+    position: relative;
+    color: black;
+    top: 40px;
+}
+
+.about .about-content .about-text span{
+    color: maroon;
+    margin-right: 15px;
+    font-family: mv boli;
+    line-height: 22px;
+}
+
+.about .about-content .about-text h4{
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.about .about-content .about-text p{
+    width: 630px;
+    text-align: justify;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.about .btn-box{
+    background: maroon;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: white;
+    border-radius: 40px;
+}
+
+.btn-box:hover{
+    background: rgb(198, 133, 133);
+    color: maroon;
+}
+
+.content .content-right img,
+.about .about-content .about-img img {
+    width: 100%;
+    max-width: 100%; /* Menyesuaikan gambar agar tidak terlalu besar */
+}
+
+.products{
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.products h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.products h1 span{
+    margin-left: 15px;
+    color: maroon;
+    font-family: mv boli;
+}
+
+.products .products-container{
+    display: flex;
+    margin: 10px auto;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+.products .products-container .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background : linear-gradient(black,maroon); 
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+.products .products-container .box img{
+    width: 100%;
+    transition: .3s;
+}
+
+.products .products-container .box:hover img{
+    opacity: 0.4;
+}
+
+.products .products-container .box h3{
+    position: absolute;
+    font-size: 20px;
+    margin-bottom: 130px;
+    color: maroon;
+    font-family: polo;
+    z-index: 5;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.products .products-container .box:hover h3{
+    opacity: 1;
+}
+
+.products .products-container .box p{
+    position: absolute;
+    width: 200px;
+    margin-top: 30px;
+    line-height: 22px;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    z-index: 5;
+    transition: 0.3s;
+    
+}
+
+.products .products-container .box:hover p{
+    opacity: 1;
+}
+
+.products .bawah {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.products .btn-products {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px; 
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 15px; 
+    width: 250px; 
+    height: 60px; 
+    margin-left: 10px;
+}
+
+.products .btn-products:hover{
+    background: rgb(198, 133, 133);
+    color: maroon;
+}
+
+.order{
+    width: 100%;
+    height: 100vh;
+    padding: 60px 0;
+}
+
+.order h2{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 55px;
+}
+
+.order h2 span{
+    color: maroon;
+    margin-right: 15px;
+    font-family: mv boli;
+}
+
+.order .order-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.order .order-main .order-image img{
+    width: 500px;
+}
+
+.order .order-main form{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+}
+
+.order .order-main form .input p{
+    line-height: 25px;
+}
+
+.order .order-main form .input{
+    margin: 5px;
+}
+
+.order .order-main form .input input{
+    width: 300px;
+    height: 35px;
+    padding: 0 10px;
+    border: 2px solid black;
+    background: whitesmoke;
+    outline: none;
+}
+
+.order .order-main form .input input:focus{
+    border: 2px solid maroon;
+}
+
+.order .order-main form .order-btn{
+    padding: 10px 0;
+    background: maroon;
+    color: whitesmoke;
+    width: 40%;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.order .order-main form .order-btn:hover{
+    background: rgb(198, 133, 133);
+    color: maroon;
+}
+
+footer {
+    background-color: black; 
+    color: #fff; 
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social {
+    margin-bottom: 20px;
+}
+
+.social a {
+    font-size: 30px;
+    padding: 10px;
+    margin-right: 10px; 
+    color: whitesmoke;
+    background:maroon;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.social a .bx:hover{
+    background: rgb(198, 133, 133);
+    border-radius: 50%; 
+}
+
+
+.links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+.copyright {
+    color: maroon;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+ .links a:hover {
+    color: maroon; 
+} 
+ 
+/* Penyesuaian untuk layar dengan lebar maksimal 768px */
+@media screen and (max-width: 768px) {
+    header nav {
+        justify-content: space-between;
+        padding: 10px;
+    }
+ 
+    header nav .logo img {
+        margin-right: 0;
+    }
+
+    header nav ul {
+        position: absolute;
+        top: 70px; /* Menyesuaikan posisi dropdown dengan header */
+        left: 0;
+        width: 100%;
+        background-color: black;
+        text-align: center;
+    }
+
+    header nav ul.open {
+        display: block; /* Menampilkan daftar navigasi saat menu di-klik */
+    }
+
+    header nav ul li {
+        margin: 15px 1; /* Mengurangi margin pada item navigasi */
+    }
+
+    header nav ul li a {
+        font-size: 18px; /* Mengubah ukuran font */
+        color: white;
+    }
+
+    .content {
+        flex-direction: column; /* Mengubah tata letak ke tata letak satu kolom */
+        align-items: center; /* Pusatkan konten vertikal */
+        text-align: center; /* Pusatkan teks */
+    }
+
+    .content-left {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .content .content-left .home-text {
+        margin-left: 0;
+        text-align: center; /* Mengatur teks di tengah */
+    }
+
+    .content-right {
+        width: 100%;
+        margin-top: 50px; /* Mengurangi margin atas pada bagian kanan */
+    }
+
+    .about .about-content {
+        flex-wrap: wrap; /* Mengubah tata letak menjadi satu kolom */
+        align-items: center; /* Pusatkan konten vertikal */
+        text-align: center; /* Pusatkan teks */
+    }
+
+    .about .about-content .about-img img {
+        width: 300px; /* Mengatur gambar agar responsive */
+        margin-top:100px;
+        margin-bottom: 20px;
+    }
+
+    .about .about-content .about-text h2 {
+        font-size: 40px; /* Mengurangi ukuran font judul */
+        top: 0; /* Reset posisi judul */
+    }
+
+    .about .about-content .about-text p {
+        width: 100%; /* Mengatur lebar teks agar terlihat penuh */
+        margin: 0 20px 20px; /* Atur margin teks */
+    }
+
+    .about .btn-box {
+        margin-top: 20px; /* Berikan ruang antara teks dan tombol */
+    }
+
+    .content .content-right img,
+    .about .about-content .about-img img {
+        width: 100%;
+        max-width: 100%; /* Menyesuaikan gambar agar tidak terlalu besar */
+    }
+
+    .products h1 {
+        margin-bottom: 40px;
+    }
+
+    .products .products-container {
+        flex-direction: column; /* Mengatur konten produk menjadi satu kolom */
+    }
+
+    .products .products-container .box{
+        width: 80%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .products .btn-products {
+        width: 100%; /* Mengatur lebar tombol agar penuh */
+        margin-left: 0; /* Menghapus margin kiri */
+        margin-top: 20px; /* Menambahkan margin atas */
+    }
+
+    .order h2 {
+        font-size: 40px; /* Mengurangi ukuran font judul */
+        text-align: center; /* Pusatkan teks */
+    }
+
+    .order .order-main {
+        flex-direction: column; /* Mengubah tata letak menjadi satu kolom */
+        align-items: center; /* Pusatkan konten */
+    }
+
+    .order .order-main .order-image img {
+        width: 80%; /* Mengatur lebar gambar agar sesuai dengan lebar layar */
+        margin-bottom: 20px; /* Berikan ruang antara gambar dan form */
+    }
+
+    .order .order-main form {
+        width: 80%; /* Mengatur lebar form agar sesuai dengan lebar layar */
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column; /* Mengubah tata letak form menjadi satu kolom */
+        align-items: center; /* Pusatkan form */
+    }
+
+    .order .order-main form .input input {
+        width: 100%; /* Mengatur lebar input agar sesuai dengan lebar form */
+        max-width: 300px; /* Batasi lebar maksimum input */
+    }
+
+    .order .order-main form .order-btn {
+        width: 60%; /* Mengatur lebar tombol pesan */
+        margin-top: 20px;
+    }  
+
+    footer {
+        margin-top: 160px;
+    }
+
+}
+
+
+
